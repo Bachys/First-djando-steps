@@ -1,0 +1,39 @@
+{% extends 'city/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<h1>Россия начинается здесь</h1>
+<!--<div class="nav">-->
+<!--    <ul>-->
+<!--        {% if user.is_authenticated %}-->
+<!--        <li></li>-->
+<!--        <li><a href="#"></a>Выход</li>-->
+<!--        {% else %}-->
+<!--        <li><a href="#">Вход</a></li>-->
+<!--        <li><a href="#">Регистрация</a></li>-->
+<!--        {% endif %}-->
+<!--    </ul>-->
+<!--</div>-->
+<h2>Церкви и соборы <a class="psk" href="https://www.pskovgorod.ru/cats.html?id=631" target="_blank">Пскова</a></h2>
+
+<div class="block">
+
+
+    {% for project in projects %}
+    <div class="element">
+        <div class="title">
+            <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+        </div>
+        <div class="img">
+            <a href="{{ project.url }}" target="_blank"><img class="img-radius" src="{{ project.image.url }}"></a>
+        </div>
+        <div class="text">
+            <p>{{ project.description }}</p>
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

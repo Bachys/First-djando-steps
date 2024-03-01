@@ -1,0 +1,22 @@
+{% extends 'city/base.html'%}
+
+{% block content %}
+
+<div class="registr">
+    <h1>Регистрация</h1>
+
+    <h2>{{ error }}</h2>
+
+    <form method="post" class="reg">
+        {% csrf_token %}
+        <div class="card">
+            <div class="center">
+                {{ form.as_p }}
+
+                <button class="btn">Зарегестрироваться</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

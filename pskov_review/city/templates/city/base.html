@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="wrap">
+        <div class="nav">
+            <ul>
+                {% if user.is_authenticated %}
+                <li>Вы вошли как:<a href="{% url 'currentuser' %}" class="user_n"> {{ user.username }}</a></li>
+                <li><a href="{% url 'index' %}">Главная страница</a></li>
+                <li>
+                    <form method="post" action="{% url 'logoutuser' %}">
+                        {% csrf_token %}
+                        <button class="out">Выход</button>
+                    </form>
+                </li>
+                {% else %}
+                <li><a href="{% url 'loginuser' %}">Вход</a></li>
+                <li><a href="{% url 'index' %}">Главная страница</a></li>
+                <li><a href="{% url 'signupuser' %}">Регистрация</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

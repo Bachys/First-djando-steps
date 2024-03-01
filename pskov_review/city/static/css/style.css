@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(143,185,209);
+  background: radial-gradient(circle, rgba(143,185,209,1) 0%, rgba(166,175,184,1) 100%);
+}
+
+.container {
+  background-image: url("../city/krom.jpg");
+  background-size: cover;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px ;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 30px 0 ;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px 18px rgba(13, 81, 112, 0.3);
+}
+
+.wrap h1 {
+  font-family: 'Amatic SC', sans-serif;
+  text-align: center;
+  font-size: 100px;
+}
+
+.wrap h2 {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.element {
+  max-width: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #b8c1c4;
+  margin: 0 10px 30px;
+  border-radius: 10px;
+  background: rgb(143,185,209);
+  background: radial-gradient(circle, rgba(143,185,209,0.3) 0%, rgba(166,175,184,0.4) 70%);
+  box-shadow: 0px 0px 35px 10px rgba(13, 81, 112, 0.2);
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.img img {
+  opacity: 0.7;
+}
+
+.img img:hover {
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.title a {
+  text-decoration: none;
+  color: rgb(32, 31, 31);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text p {
+  padding: 5px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-height: 300px;
+  overflow-y: auto;
+  color: rgb(73, 73, 72);
+}
+
+a:hover {
+  color: rgb(81, 0, 134);
+}
+
+.text p::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgb(149, 151, 153);
+}
+
+h2 a {
+  font-family: 'Amatic SC', sans-serif;
+  color: rgb(32, 31, 31);
+  text-decoration: none;
+}
+
+.img-radius {
+  border-radius: 5px;
+}
+
+.title h3 {
+  text-align: center;
+}
+
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  list-style: none;
+  margin: 30px 50px 0;
+  cursor: pointer;
+  align-items: center;
+}
+
+.psk {
+  text-decoration: underline;
+}
+
+li a{
+  color: black;
+  text-decoration: none;
+}
+
+.reg ul {
+  list-style: none;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.userpage {
+  width: 100%;
+  height: 700px;
+}
+
+.user_n {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: rgb(105, 135, 165);
+}
+
+.out {
+  padding: 5px 30px;
+  align-items: center;
+  box-shadow: 1px 1px 3px 1px;
+  border-radius: 6px;
+  background-color: #98bad0;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+.out:hover, .btn:hover {
+  opacity: 100%;
+}
+
+.auth, .registr {
+  width: 100%;
+  height: 700px;
+}
+
+.center {
+  text-align: center;
+  width: 400px;
+  padding: 30px 20px;
+}
+
+.btn {
+  padding: 5px 30px;
+  align-items: center;
+  box-shadow: 1px 1px 3px 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+input {
+  width: 100%;
+  padding: 2px 6px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0 0;
+}
+
+.card {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.helptext, .helptext li{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
